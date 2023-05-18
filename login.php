@@ -15,7 +15,7 @@
     ?>
 
     <form>
-        <div id="signin-status"></div>
+        <div id="status"></div>
         <br>
         <div>
             <label for="email">Email</label>

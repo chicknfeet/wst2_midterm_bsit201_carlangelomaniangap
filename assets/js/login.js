@@ -5,9 +5,9 @@ $('button').click(function(){
         type:'POST',
         success:function(result){
             if(result == 'error'){
-                $('#signin-status').html('Invalid username or password')
+                $('#status').html('Invalid username or password')
             }else{
-                $('#signin-status').html('Logged In Successfully')
+                $('#status').html('Logged In Successfully')
                 window.location.href = 'chatroom.php'
             }
         }
