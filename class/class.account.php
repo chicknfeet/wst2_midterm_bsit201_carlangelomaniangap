@@ -24,11 +24,12 @@ class Accounts{
     }
 
     public function register(){
-        session_start();
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        $pdo = new PDO('mysql:host=localhost;dbname=bsit201_maniangap_chatroom','root','');
+        $pdo = new PDO('mysql:host=localhost;dbname=bsit201_maniangap_chatroom','root','') 
+
+        $conn = new mysqli($name, $username, $password);
 
         $account = $pdo->prepare('INSERT * FROM accounts WHERE email=:email and password=:password');
         $account->bindValue('email',$email);
